@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+} /** - inicia todos os elementos com margin 0 e pedding 0*/
+
+.container-principal {
+  font-family: "verdana";
+  color: chocolate;
+}
+.imagem{
+width: 250px;
+height: 250px;
+}
+.texto{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color:#fff;
+  text-align: center;
+  top: 100px;
+  width: 250px;
+  line-height: 30px;
+  height: 30px;
+}
+
+
+/*definir as propriedades do topo*/
+header {
+  width: 100%;
+  height: 220px;
+  background-color: darkred;
+  position: relative;
+  top: 0;
+}
+
+/*definir as propriedades do logo*/
+.logo {
+  position: absolute;
+  width: 477px;
+  height: auto;
+}
+.logo img {
+  width: 53%;
+  margin-left: 00%;
+}
+
+/*definir as propriedades do menu*/
+nav {
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+}
+nav ul li {
+  float: left;
+  color: rgb(248, 246, 246);
+  width: auto;
+  margin: 0.8em;
+  font-size: 2em;
+  font-family: "verdana";
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #bbb;
+}
+nav ul li a :hover {
+  color: #b13030;
+}
+
+/*definir rpopriedades da imagem pincipal*/
+#fundo {
+  width: 100%;
+}
+#fundo img {
+  line-height: 30px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  float: left;
+  height: 800px;
+  width: 100%;
+  padding: 10px;
+  margin: 5;
+  border: 3px;
+  border-style: solid;
+  border-color: 3px;
+}
+
+#principal {
+  width: 100%;
+}
+#pprincipal hamburguer {
+  line-height: 33000px;
+  background-color: rgb(229, 237, 238);
+  color: azure;
+  text-align: center;
+  float: left;
+  height: 430px;
+  width: 100%;
+  padding: 10px;
+  margin: 5;
+  border: 3px;
+  border-style: solid;
+  border-color: 3px;
+  margin: 0.8em;
+  font-size: 6em;
+}
+
+/*definir as propriedades dos pop'ups*/
+.modalDialog {
+  position: fixed;
+  font-family: verdana;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba (181, 9, 9, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  -webkit-transition: opacit 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  display: none;
+}
+.modalDialog:target {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalDialog div {
+  width: 500px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.modalDialog p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.modalDialog img {
+  width: 50%;
+  position: relative;
+  margin-left: 25%;
+}
+/*.bg {
+  background-image: url(imagem/fundo.jpeg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}*/
+.close {
+  background-color: #0f0fb6;
+  color: #e940e0;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+
+.close:hover {
+  background-color: #b50909;
+}
+footer {
+  width: 100%;
+  height: 18%;
+  background-color: #b50909;
+  color: #fff;
+  position: relative;
+  float: left;
+  font-family: "verdana";
+}
+footer .footer-text {
+  width: 30%;
+  margin: 1%;
+  position: relative;
+  float: left;
+}
+footer .footer-text a {
+  color: #fff;
+}
+
+.color-page {
+  background-color: #ddd;
+}
+
+.img-titulo {
+  width: 20%;
+  height: auto;
+  margin-bottom: 10px;
+  position: relative;
+  float: left;
+  margin-right: 5%;
+}
+.img-titulo {
+  width: 20%;
+  margin-right: 10%;
+  margin-top: 50px;
+}
+#cardapio-code {
+  width: 75%;
+  position: relative;
+  float: left;
+}
+#cardapio-code .config-cardapio {
+  width: 40%;
+  border: 1px soli #b50909;
+  margin-left: 1.5%;
+  padding: 1%;
+  float: left;
+  margin-top: 30px;
+  background-color: #fff;
+}
+#cardapio-code .config-cardapio img {
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+}
+#cardapio-code .config-cardapio p {
+  width: 90%;
+  margin-left: 5%;
+  font-size: 1, 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#cardapio-code .config-cardapio p a {
+  color: #111;
+}
